@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0; 
+  /* jab bhi koi change hoga, wo suddenly nahi hoga — smooth animation ke saath hoga */
+  transition: all 0.5s ease;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+.title {
+  color: #00f2fe;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.move-icon {
+  height: 50px;
+  transition: transform 0.2s;
+}
+
+.move-button {
+  background-color: transparent;
+  border: 2px solid #00f2fe;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  margin: 10px;
+  cursor: pointer;
+  /* transition will make the changes smooth */
+  transition: all 0.2s ease;
+}
+
+.result {
+  color: #00ffcc;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.score {
+  margin-top: 60px;
+}
+
+.reset-score-button {
+  font-size: 15px;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+}
+
+.reset-score-button:hover {
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+  box-shadow: 0 0 15px #00f2fe;
+}
+.move-button:hover {
+  background-color: white;
+  border-color: white;
+  box-shadow: 0 0 15px white;
+}
+
+.move-button:hover .move-icon {
+  /* transform - rotate and zoom effect */
+  /* thoda rotate aur zoom */
+  transform: rotate(10deg) scale(1.3);
+}
