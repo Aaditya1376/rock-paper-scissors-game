@@ -66,4 +66,4 @@ Through this project, I practiced:
 
 ## Author
 
-Aditya
+Aditya Kumar
